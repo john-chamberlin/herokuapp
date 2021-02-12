@@ -11,7 +11,7 @@ function App() {
   const [data, setData] = useState('sup')
 
   useEffect(() => {
-    fetch(url('/api'))
+    fetch(url('/api/'))
       .then(res => res.json())
       .then(api => setData(api.data))
   }, [])
